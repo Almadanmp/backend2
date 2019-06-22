@@ -83,10 +83,8 @@ public class DataImporter {
             e.printStackTrace();
         }
         inputHelperUI.acceptPathJSONorXMLAndReadFile("src/test/resources/geoAreaFiles/DataSet_sprint07_GA.json", geographicAreaRepository, sensorTypeRepository, areaTypeRepository);
-        gaSettingsUI.importReadingsFromJSON("src/test/resources/readingsFiles/DataSet_sprint07_GAData.json");
         readerController.readJSONAndDefineHouse(house, "src/test/resources/houseFiles/DataSet_sprint06_HouseData.json");
         houseConfigurationController.readSensors("src/test/resources/houseSensorFiles/DataSet_sprint07_HouseSensors.json");
-        houseConfigurationUI.importReadingsFromJSON("src/test/resources/readingsFiles/DataSet_sprint07_HouseSensorData.json");
         createUsers();
         System.out.println("...");
         System.out.println("Data imported successfully");
